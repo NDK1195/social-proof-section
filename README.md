@@ -8,8 +8,8 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Solution URL here](https://github.com/NDK1195/profile-card-component)
-- Live Site URL: [Live site URL here](https://ndk1195.github.io/profile-card-component/)
+- Solution URL: [Solution URL here](https://github.com/NDK1195/social-proof-section)
+- Live Site URL: [Live site URL here](https://ndk1195.github.io/social-proof-section/)
 
 ### Built with
 
