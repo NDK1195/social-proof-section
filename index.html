@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -11,33 +11,197 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Frontend Mentor | Social proof section</title>
   </head>
   <body>
-    10,000+ of our users love our products.
+    <main class="relative flex min-h-screen items-center justify-center">
+      <picture>
+        <source
+          media="(min-width: 1024px)"
+          srcset="./images/bg-pattern-top-desktop.svg"
+        />
+        <img
+          src="./images/bg-pattern-top-mobile.svg"
+          alt="background pattern top"
+          class="absolute left-0 top-0"
+        />
+      </picture>
+      <!-- pattern top -->
+      <picture>
+        <source
+          media="(min-width: 1024px)"
+          srcset="./images/bg-pattern-bottom-desktop.svg"
+        />
+        <img
+          src="./images/bg-pattern-bottom-mobile.svg"
+          alt="background pattern bottom"
+          class="absolute bottom-0 right-0"
+        />
+      </picture>
+      <!-- pattern bottom -->
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+      <!-- main content -->
+      <div
+        class="mx-6 my-20 grid min-w-[327px] max-w-[1110px] grid-cols-1 lg:my-0 lg:grid-cols-2 lg:gap-y-[71px]"
+      >
+        <section
+          class="mb-[39px] flex flex-col gap-[17px] text-center lg:mb-0 lg:gap-4 lg:text-left"
+        >
+          <h1
+            class="text-[40px] font-bold leading-8 tracking-[-1.429px] text-very-dark-magenta lg:w-[445px] lg:text-[56px] lg:leading-[48px] lg:tracking-[-2px]"
+          >
+            10,000+ of our users love our products.
+          </h1>
+          <p
+            class="text-[19px] font-medium leading-[25px] tracking-[-0.633px] text-dark-grayish-magenta lg:w-[445px]"
+          >
+            We only provide great products combined with excellent customer
+            service. See what our satisfied customers are saying about our
+            services.
+          </p>
+        </section>
+        <!-- Ratings section -->
+        <section class="mb-[49px] flex flex-col gap-4 lg:mb-0">
+          <div
+            class="flex flex-col items-center gap-[15.23px] rounded-lg bg-light-grayish-magenta py-4 lg:max-w-[445px] lg:flex-row lg:gap-[32.45px] lg:py-5 lg:pl-8"
+          >
+            <div class="gap flex items-center gap-2">
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+            </div>
+            <p
+              class="text-[17px] font-bold leading-none text-very-dark-magenta"
+            >
+              Rated 5 Stars in Reviews
+            </p>
+          </div>
+          <!-- rating one-->
+          <div
+            class="flex flex-col items-center gap-[15.23px] rounded-lg bg-light-grayish-magenta py-4 lg:ml-12 lg:max-w-[445px] lg:flex-row lg:gap-[32.45px] lg:py-5 lg:pl-8"
+          >
+            <div class="gap flex items-center gap-2">
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+            </div>
+            <p
+              class="text-[17px] font-bold leading-none text-very-dark-magenta"
+            >
+              Rated 5 Stars in Report Guru
+            </p>
+          </div>
+          <!-- rating two-->
+          <div
+            class="flex flex-col items-center gap-[15.23px] rounded-lg bg-light-grayish-magenta py-4 lg:ml-24 lg:max-w-[445px] lg:flex-row lg:gap-[32.45px] lg:py-5 lg:pl-8"
+          >
+            <div class="gap flex items-center gap-2">
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+              <img src="./images/icon-star.svg" alt="icon star" />
+            </div>
+            <p
+              class="text-[17px] font-bold leading-none text-very-dark-magenta"
+            >
+              Rated 5 Stars in BestTech
+            </p>
+          </div>
+          <!-- rating three-->
+        </section>
+        <!-- Testimonials section -->
+        <section
+          class="flex flex-col gap-4 lg:col-span-2 lg:flex-row lg:gap-[30px]"
+        >
+          <div
+            class="rounded-lg bg-very-dark-magenta px-8 pb-[35px] pt-10 lg:max-h-[234px] lg:w-[350px]"
+          >
+            <div class="mb-[23px] flex items-center gap-[23px] lg:mb-[31px]">
+              <img
+                src="./images/image-colton.jpg"
+                alt="image colton"
+                class="size-10 rounded-full"
+              />
+              <div class="flex flex-col gap-1">
+                <h2 class="text-[17px] font-bold leading-none text-white">
+                  Colton Smith
+                </h2>
+                <p class="text-[17px] leading-none text-soft-pink">
+                  Verified Buyer
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-[17px] font-medium leading-[22px] tracking-[-0.304px] text-white"
+            >
+              “ We needed the same printed design as the one we had ordered a
+              week prior. Not only did they find the original order, but we also
+              received it in time. Excellent! ”
+            </p>
+          </div>
+          <!-- one testimonial -->
+          <div
+            class="rounded-lg bg-very-dark-magenta px-8 pb-[35px] pt-10 lg:relative lg:top-4 lg:max-h-[234px] lg:w-[350px]"
+          >
+            <div class="mb-[23px] flex items-center gap-[23px] lg:mb-[31px]">
+              <img
+                src="./images/image-irene.jpg"
+                alt="image irene"
+                class="size-10 rounded-full"
+              />
+              <div class="flex flex-col gap-1">
+                <h2 class="text-[17px] font-bold leading-none text-white">
+                  Irene Roberts
+                </h2>
+                <p class="text-[17px] leading-none text-soft-pink">
+                  Verified Buyer
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-[17px] font-medium leading-[22px] tracking-[-0.304px] text-white"
+            >
+              “ Customer service is always excellent and very quick turn around.
+              Completely delighted with the simplicity of the purchase and the
+              speed of delivery.”
+            </p>
+          </div>
+          <!-- one testimonial -->
+          <div
+            class="rounded-lg bg-very-dark-magenta px-8 pb-[35px] pt-10 lg:relative lg:top-8 lg:max-h-[234px] lg:w-[350px]"
+          >
+            <div class="mb-[23px] flex items-center gap-[23px] lg:mb-[31px]">
+              <img
+                src="./images/image-anne.jpg"
+                alt="image anne"
+                class="size-10 rounded-full"
+              />
+              <div class="flex flex-col gap-1">
+                <h2 class="text-[17px] font-bold leading-none text-white">
+                  Anne Wallace
+                </h2>
+                <p class="text-[17px] leading-none text-soft-pink">
+                  Verified Buyer
+                </p>
+              </div>
+            </div>
+            <p
+              class="text-[17px] font-medium leading-[22px] tracking-[-0.304px] text-white"
+            >
+              “ Put an order with this company and can only praise them for the
+              very high standard. Will definitely use them again and recommend
+              them to everyone! ”
+            </p>
+          </div>
+          <!-- one testimonial -->
+        </section>
+      </div>
+    </main>
   </body>
 </html>
